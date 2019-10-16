@@ -19,4 +19,5 @@ document.getElementById('predictButton').addEventListener('click', (el, ev) => {
     let val = parseInt(document.getElementById('inputValue').value);
     console.log(val);
     document.getElementById('output').innerText = model.predict(tf.tensor2d([val], [1,1]));
+ 
 })
